@@ -8,7 +8,7 @@ import os
 #Modelo de Regressão Linear serialidado em arquivo
 modelo = pickle.load(open('models/modelo.sav', 'rb'))
 
-colunas  = ['tamanho', 'ano', 'garagem']
+colunas  = ['tamanho', 'ano', 'dormitorios']
 
 app = Flask(__name__)
 app.config['BASIC_AUTH_USERNAME'] = os.environ.get('BASIC_AUTH_USERNAME')
